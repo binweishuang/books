@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>books</title>
+    <style type="text/css">
+        #b_div{
+            border: 1px solid   silver;
+            padding: 5px;
+            width: 500px;
+        }
+        .b_span{
+            display: inline-block;
+            width: 100px;
+        }
+        .b_select{
+            width: 146px;
+            height: 25px;
+            margin-left: -5px;
+        }
+        .in1{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div id="b_div">
+    <span class="b_span">图书名称</span><input type="text"><br>
+    <span class="b_span">作者    </span><input type="text"><br>
+    <span class="b_span">售价    </span><input type="text"><br>
+    <span class="b_span">图片</span><input type="button" value="选择文件"><br>
+    <span class="b_span">图书描述</span><textarea rows="6" cols="40"></textarea><br>
+    <span class="b_span">所属分类</span>
+    <select class="b_select">
+        <option>文学类书籍</option>
+        <option>人文社科</option>
+        <option>哲学类书籍</option>
+    </select><br>
+    <input class="in1" type="button" value="清空">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input class="in1" type="button" value="提交">
+</div>
+</body>
+</html>

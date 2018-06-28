@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>modify-b</title>
+    <style type="text/css">
+        .div1{
+            text-align: center;
+            line-height: 60px;
+            height: 120px;
+            border-bottom: 2px solid #BABABA;
+        }
+        .div2{
+            display: inline-block;
+            width: 10%;
+            border-right: 2px solid #BABABA;
+            height: 100%;
+        }
+        .div3{
+            display: inline-block;
+            vertical-align:top;
+            padding: 5px;
+        }
+        .ul1 li{
+            margin-bottom: 10px;
+        }
+        .ul2,.ul3{
+            list-style-type: none;
+            display: none;
+            margin-bottom: 50px;
+        }
+    </style>
+    <script src="jquery-1.12.0.min.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function () {
+           $(".li1").click(function () {
+           $(".ul2").toggle("slow");
+           })
+           $(".li2").click(function () {
+           $(".ul3").toggle("slow");
+           })
+           $(".id1").click(function(){
+           $(".div3").load("book_type_mod.html");
+           });
+           $(".id2").click(function(){
+               $(".div3").load("book_type.html");
+           });
+           $(".id3").click(function(){
+               $(".div3").load("book_mod.html");
+           });
+           $(".id4").click(function(){
+               $(".div3").load("book.html");
+           });
+       })
+    </script>
+</head>
+<body>
+<div class="div1">
+    <h1>网站后台管理</h1>
+</div>
+<div class="div2">
+    <ul class="ul1">
+        <li class="li1"><a href="#">分类管理</a></li>
+              <ul class="ul2">
+                  <li class="id1"><a href="#">添加分类</a></li>
+                  <li class="id2"><a href="#">查看分类</a></li>
+              </ul>
+        <li class="li2"><a href="#">图书管理</a></li>
+        <ul class="ul3">
+            <li class="id3"><a href="#">添加图书</a></li>
+            <li class="id4"><a href="#">查看图书</a></li>
+        </ul>
+
+        <li><a href="#">订单管理</a></li>
+    </ul>
+</div>
+<div class="div3">
+
+</div>
+
+</body>
+</html>
